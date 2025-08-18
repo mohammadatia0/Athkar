@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#4facfe">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="أذكار المسلم">
+      <link rel="apple-touch-icon" href="icon-192.png">
+    <title>أذكار المسلم</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🕌 أذكار المسلم 🕌</h1>
+
+<div class="header-list">
+    <div class="header-item" onclick="showForms('اذكار الصباح')">أذكار الصباح</div>
+    <div class="header-item" onclick="showForms('اذكار المساء')">أذكار المساء</div>
+    <div class="header-item" onclick="showForms('الرقية')">الرقية الشرعية</div>
+    <div class="header-item" style="background:#ff6666;color:white;" onclick="resetToday()">إعادة ضبط اليوم</div>
+</div>
+
+<div class="line"></div>
+
+<div class="forms-container" id="forms-container"></div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+
+
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js')
+    .then(() => console.log("Service Worker registered"))
+    .catch(err => console.log("Service Worker failed:", err));
+}
+</script>
+
+</body>
+</html>
