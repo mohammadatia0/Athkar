@@ -42,24 +42,25 @@ h1 { font-size: 28px; font-weight: bold; user-select: none; }
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 70px;
     transition: transform 1s ease;
 }
 
 .form-item {
     background: white;
     color: #333;
-    padding: 15px;
+    padding: 10px;
     border-radius: 10px;
     width: 80%;
     text-align: center;
     position: relative;
     font-size: 18px;
     font-weight: bold;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
     transition: transform 0.5s ease, opacity 0.5s ease;
     cursor: pointer;
     user-select: none;
+    z-index: 100;
 }
 .form-item:hover { transform: scale(1.05); }
 .form-item:active { transform: scale(0.95); }
@@ -92,5 +93,6 @@ h1 { font-size: 28px; font-weight: bold; user-select: none; }
 .form-item.disabled:hover { transform: none !important; }
 
 .icons-container {
+
 
 
