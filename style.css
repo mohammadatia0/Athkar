@@ -51,7 +51,7 @@ h1 { font-size: 28px; font-weight: bold; user-select: none; }
     color: #333;
     padding: 10px;
     border-radius: 10px;
-    width: 100%;
+    width: 80%;
     text-align: center;
     position: relative;
     font-size: 18px;
@@ -93,6 +93,7 @@ h1 { font-size: 28px; font-weight: bold; user-select: none; }
 .form-item.disabled:hover { transform: none !important; }
 
 .icons-container {
+
 
 
 
