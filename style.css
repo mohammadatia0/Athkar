@@ -42,7 +42,7 @@ h1 { font-size: 28px; font-weight: bold; user-select: none; }
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 90px;
+    gap: 40px;
     transition: transform 1s ease;
 }
 
@@ -93,6 +93,7 @@ h1 { font-size: 28px; font-weight: bold; user-select: none; }
 .form-item.disabled:hover { transform: none !important; }
 
 .icons-container {
+
 
 
 
